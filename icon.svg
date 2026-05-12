@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="64" height="64" rx="6" fill="#09090B"/>
+  <!-- Left leg of A -->
+  <path d="M16 54 L28 10 L30 10 L18 54 Z" fill="#C9A84C"/>
+  <!-- Right leg of A -->
+  <path d="M48 54 L36 10 L34 10 L46 54 Z" fill="#C9A84C" opacity="0.85"/>
+  <!-- Crossbar -->
+  <rect x="22" y="35" width="20" height="3" rx="1" fill="#C9A84C"/>
+  <!-- Neural nodes -->
+  <circle cx="32" cy="22" r="2.5" fill="#22D3EE" filter="url(#glow)"/>
+  <circle cx="25" cy="40" r="2" fill="#22D3EE" filter="url(#glow)"/>
+  <circle cx="39" cy="40" r="2" fill="#22D3EE" filter="url(#glow)"/>
+  <!-- Connection lines -->
+  <line x1="32" y1="22" x2="25" y2="40" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+  <line x1="32" y1="22" x2="39" y2="40" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+  <line x1="25" y1="40" x2="39" y2="40" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+</svg>
